@@ -106,7 +106,7 @@ export const Button = styled.button`
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 
-  background-color: #06b6f9;
+  background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(16,208,244,1) 100%);
   display: block;
   text-align: center;
   font-size: 1rem;
