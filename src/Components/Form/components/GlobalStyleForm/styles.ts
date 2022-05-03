@@ -1,5 +1,5 @@
+import FilteredPropsInputField from "../FilteredPropsInputField";
 import styled, { css } from "styled-components";
-import FilteredPropsInputField from "./FilteredPropsInputField";
 
 export const Input = styled(FilteredPropsInputField)`
   background-color: white;
@@ -106,7 +106,8 @@ export const Button = styled.button`
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 
-  background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(16,208,244,1) 100%);
+  background: rgb(16, 208, 244, 1); 
+  
   display: block;
   text-align: center;
   font-size: 1rem;
@@ -122,5 +123,13 @@ export const Button = styled.button`
   &:focus,
   &:hover {
     cursor: pointer;
-  }
+  }`
+  export const StyledInlineErrorMessage = styled.div`
+  background-color: rgb(255, 245, 245);
+  color: rgb(120, 27, 0);
+  display: block;
+
+  padding: 0.5rem 0.75rem;
+  
+  white-space: pre-line;
 `;

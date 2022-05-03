@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import ReactDOM from 'react-dom/client';
 import App from './App'
-import styled, {createGlobalStyle} from 'styled-components'
+import  {createGlobalStyle} from 'styled-components'
+import { BrowserRouter } from 'react-router-dom';
 
 
 const Global = createGlobalStyle `
@@ -10,18 +10,13 @@ const Global = createGlobalStyle `
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
-}
-body {
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(16,208,244,1) 100%);;
 }
 `
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLInputElement);
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Global />
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+root.render(
+  <BrowserRouter>
+  <Global />
+  <App />
+  </BrowserRouter>
 );
-

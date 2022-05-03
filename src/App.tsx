@@ -1,10 +1,10 @@
-import React from 'react';
-import LoginForm from './components/Form/LoginForm'
+import Form from './Components/Form/view'
+
 
 function App() {
   return (
     <>
-     <LoginForm />
+     <Form/> 
     </>
   );
 }
